@@ -148,8 +148,10 @@ public final class TropicraftBiomes {
         features.addEih(generation);
         features.addTropicsFlowers(generation);
         features.addPineapples(generation);
+        features.addRegularSeagrass(generation);
 
-        DefaultBiomeFeatures.withBadlandsGrass(generation);
+        features.addTropicsGrass(generation);
+        DefaultBiomeFeatures.withLargeFern(generation);
         DefaultBiomeFeatures.withTallGrass(generation);
 
         MobSpawnInfo.Builder spawns = defaultSpawns();
@@ -173,6 +175,7 @@ public final class TropicraftBiomes {
         BiomeGenerationSettings.Builder generation = defaultGeneration()
                 .withSurfaceBuilder(surfaces.sandy);
 
+        features.addRegularSeagrass(generation);
         carvers.addUnderwater(generation);
 
         features.addPalmTrees(generation);
@@ -199,6 +202,7 @@ public final class TropicraftBiomes {
 
         features.addTropicsGems(generation);
         features.addRainforestTrees(generation);
+        features.addRegularSeagrass(generation);
 
         generation.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, features.rainforestFlowers);
         generation.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, features.coffeeBush);
@@ -309,7 +313,7 @@ public final class TropicraftBiomes {
 
     private Biome createMangroves() {
         BiomeGenerationSettings.Builder generation = defaultGeneration()
-                .withSurfaceBuilder(surfaces.grassAndDirt);
+                .withSurfaceBuilder(surfaces.mangrove);
 
         carvers.addLand(generation);
 
@@ -333,11 +337,11 @@ public final class TropicraftBiomes {
 
         BiomeAmbience.Builder ambience = defaultAmbience();
         ambience.setWaterColor(0x66C197).setWaterFogColor(0x0C3522);
-        ambience.withGrassColor(0x2eb31b);
+        ambience.withGrassColor(0x6FB21C);
 
         return new Biome.Builder()
                 .precipitation(Biome.RainType.RAIN)
-                .depth(-0.25F).scale(-0.03F)
+                .depth(-0.18F).scale(-0.045F)
                 .temperature(2.0F).downfall(1.5F)
                 .category(Biome.Category.SWAMP)
                 .withGenerationSettings(generation.build())

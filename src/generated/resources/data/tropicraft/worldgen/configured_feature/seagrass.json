@@ -3,8 +3,21 @@
     "feature": {
       "config": {
         "feature": {
-          "config": {},
-          "type": "tropicraft:reeds"
+          "config": {
+            "feature": {
+              "config": {
+                "probability": 0.3
+              },
+              "type": "minecraft:seagrass"
+            },
+            "decorator": {
+              "config": {
+                "count": 48
+              },
+              "type": "minecraft:count"
+            }
+          },
+          "type": "minecraft:decorated"
         },
         "decorator": {
           "config": {
@@ -24,7 +37,7 @@
     },
     "decorator": {
       "config": {
-        "count": 2
+        "count": 3
       },
       "type": "minecraft:count"
     }

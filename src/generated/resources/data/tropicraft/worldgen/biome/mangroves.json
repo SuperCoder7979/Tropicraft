@@ -1,12 +1,12 @@
 {
   "effects": {
     "sky_color": 7907327,
-    "grass_color": 3060507,
+    "grass_color": 7320092,
     "fog_color": 12638463,
     "water_color": 6734231,
     "water_fog_color": 800034
   },
-  "surface_builder": "tropicraft:grass_and_dirt",
+  "surface_builder": "tropicraft:mangrove",
   "carvers": {
     "air": [
       "tropicraft:cave",
@@ -190,6 +190,6 @@
   "temperature": 2.0,
   "downfall": 1.5,
   "category": "swamp",
-  "depth": -0.25,
-  "scale": -0.03
+  "depth": -0.18,
+  "scale": -0.045
 }
