@@ -49,7 +49,8 @@
       "minecraft:patch_grass_jungle",
       "minecraft:bamboo_light",
       "minecraft:patch_melon",
-      "tropicraft:rainforest_vines"
+      "tropicraft:rainforest_vines",
+      "tropicraft:bamboo"
     ]
   ],
   "starts": [
@@ -147,6 +148,6 @@
   "temperature": 1.5,
   "downfall": 2.0,
   "category": "jungle",
-  "depth": 0.1,
-  "scale": 1.2
+  "depth": 0.25,
+  "scale": 0.25
 }

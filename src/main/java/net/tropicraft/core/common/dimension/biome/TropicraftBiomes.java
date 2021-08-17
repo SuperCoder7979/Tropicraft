@@ -201,6 +201,7 @@ public final class TropicraftBiomes {
         carvers.addLand(generation);
 
         features.addTropicsGems(generation);
+        features.addPleodendron(generation);
         features.addRainforestTrees(generation);
         features.addRegularSeagrass(generation);
 
